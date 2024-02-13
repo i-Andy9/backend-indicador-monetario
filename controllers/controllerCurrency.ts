@@ -30,7 +30,7 @@ const controllerCurrencyItemByDate = async (req: Request, resp: Response) => {
   try {
     const id = req.params.codigo;
     const date = req.params.fecha;
-    const response = await getIndicatorsItemByDate(id,date);
+    const response = await getIndicatorsItemByDate(id, date);
 
     return resp.status(200).json({ Indicadores: response });
   } catch (error) {
